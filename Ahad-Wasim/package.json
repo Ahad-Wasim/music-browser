@@ -1,0 +1,26 @@
+{
+  "name": "akqa-developer-test",
+  "version": "1.0.0",
+  "description": "Fictional music discovery and news platform aimed at music enthusiasts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahad-Wasim/musicbrowser.git"
+  },
+  "author": "AKQA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahad-Wasim/musicbrowser/issues"
+  },
+  "homepage": "https://github.com/Ahad-Wasim/musicbrowser#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3"
+  }
+}
