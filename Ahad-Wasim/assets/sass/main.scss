@@ -1,3 +1,262 @@
-body {
-  background-color: blue;
+/* Font-Face Universal for all browsers */
+
+@font-face {
+  font-family: "San-Francisco";
+  src: url(../assets/fonts/sanfranciscodisplay-regular-webfont.eot);  /* Internet Explorer */
+  src: url(../assets/fonts/sanfranciscodisplay-regular-webfont.eot?#iefix) format("embedded-opentype"), 
+       url(../assets/fonts/sanfranciscodisplay-regular-webfont.woff2) format("woff2"),
+       url(../assets/fonts/sanfranciscodisplay-regular-webfont.woff) format("woff"),
+       url(../assets/fonts/sanfranciscodisplay-regular-webfont.ttf) format("truetype"),
+       url(../assets/fonts/sanfranciscodisplay-regular-webfont.svg#sanfrancisco) format("svg");
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1D1F22;
+  color:#FDFDFD;
+  font-family:"San-Francisco", Verdana, sans-serif;
+  text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
+  height:100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+
+/* For Nav Bar */
+header {
+  background-color:#303236;
+  -moz-box-shadow:    0px 1px 1px #1C1E21;
+  -webkit-box-shadow: 0px 1px 1px #1C1E21;
+  box-shadow: 0px 1px 1px #1C1E21;
+}
+
+nav ul {
+  list-style-type:none;
+  text-align:center;
+}
+
+.nav-link {
+  display:inline;
+  margin-right:50px;
+}
+
+.nav-link a, .searchBar {
+  color:inherit;
+  font-size:20px;
+  text-decoration:none;
+  display:inline-block;
+  padding:18px 0px;
+}
+
+.searchBar {
+  background-image: url(../assets/images/fa-search.png);
+  display:inline-block;
+}
+
+
+
+
+#main-content {
+  border:1px solid teal;
+  max-width:1100px;
+  margin:60px auto;
+}
+
+#main-content section {
+  float:left;
+  margin-left:15px;
+  width:65%;
+}
+
+
+.banner {
+  display:inline-block;
+}
+
+.banner h2 {
+  color: #047FB5;
+}
+
+
+
+
+.cover {
+  width:300px;
+  height:145px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.banner-1 .cover, .banner-3 .cover {
+  margin-right: 25px;
+}
+
+.banner-3 h2, .banner-4 h2 {
+  margin-top:52px;
+}
+
+
+
+/* Move to Javascript files */
+.banner-1 > .cover {
+  background-image: url(http://www.digitaldjtips.com/wp-content/uploads/2012/03/concert-crowd.jpg);
+  background-size: cover;
+}
+
+.banner-2 > .cover {
+  background-image: url(http://rocksubculture.com/wp-content/uploads/2013/10/Depeche-Mode-Delta-Machine-Tour-2013-Las-Vegas-Pearl-Concert-Theater-Palms-Casino-Resort-September-6-Concert-Review-Photos-136-RSJ.jpg);
+  background-size: cover;
+}
+
+.banner-3 > .cover {
+  background-image: url(http://cdn01.cdn.justjared.com/wp-content/uploads/headlines/2015/09/selena-cover.jpg);
+  background-size: cover;
+}
+
+.banner-4 > .cover {
+  background-image: url(http://www.wallpaperfo.com/thumbnails/detail/20120427/music%20steve%20grayscale%20monochrome%20maxell%201920x1200%20wallpaper_www.wallpaperfo.com_12.jpg);
+  background-size: cover;
+}
+
+
+
+
+
+#main-content aside {
+  float:right;
+  width:26%;
+}
+
+.top-songs-header {
+  margin-top:2px;
+  font-size:20px;
+  padding-bottom:15px;
+  border-bottom:2px solid black;
+}
+
+.top-songs-header p {
+  font-size:22px;
+}
+
+.song {
+  margin-top:17px;
+}
+
+.album-artwork-wrapper {
+  display:inline-block;
+  margin-right:7px;
+}
+
+.album-artwork-wrapper img{
+  border-radius:50%;
+  width:45px;
+  height:45px;
+  vertical-align: middle;
+  box-shadow:-.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;  
+}
+
+.song-info-wrapper {
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.song-name p {
+  color: #047FB5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */ 
+
+footer {
+  width:100%;
+}
+
+.message-wrapper {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.extra-footer-messages {
+  list-style-type:none;
+  color: #047FB5;
+}
+
+.extra-footer-messages li:first-child {
+  color:white;
+  margin-right: 10px;
+}
+.extra-footer-messages li {
+  display:inline;
+  margin-right:5px;
+}
+.extra-footer-messages a {
+  color:inherit;
+  text-decoration: none;
+}
+
+
+
+
+/* Media Queries*/
+
+@media (min-width:320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+}
+
+@media (min-width:481px) { 
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+
+@media (min-width:641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+}
+
+@media (min-width:961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+}
+
+@media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */ 
+}
+
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */ 
+}
+
+
+
+
+
+
