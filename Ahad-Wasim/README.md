@@ -11,7 +11,7 @@ Additional comments (optional):
 ### Running the App
   
   1. Change into the projects directory 
-  2. Then simply run gulp and server will open up a new tab with content 
+  2. Then simply run gulp and the server will open up a new tab with the content displayed!
 
         > cd Ahad-Wasim
         > gulp
