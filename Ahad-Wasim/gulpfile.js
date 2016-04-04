@@ -42,7 +42,7 @@ gulp.task('serve', function(){
   })
 });
 
-gulp.task('default', ['serve'], function(){
+gulp.task('default', ["scripts", "sass", "serve"], function(){
   gulp.watch('assets/sass/**/*.scss', ['sass'])
   gulp.watch(concatOrder, ['scripts'])
   gulp.watch('./**/*.html').on('change', browserSync.reload);
