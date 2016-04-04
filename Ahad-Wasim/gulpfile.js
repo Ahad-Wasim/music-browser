@@ -9,7 +9,7 @@ const cssnano = require('gulp-cssnano');
 const plumber = require('gulp-plumber');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
-const concatOrder = ['app/js/file1.js', 'app/js/file2.js', 'app/js/file3.js'];
+const concatOrder = ['app/js/data.js', 'app/js/main.js'];
 
 gulp.task('scripts', function(){
   return gulp.src(concatOrder)
@@ -30,7 +30,7 @@ gulp.task('sass', function(){
       .pipe(sass()) // For the moment files are not being outputted in right directory
       .pipe(cssnano())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist/css/main.min.css'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.reload({ stream: true }))
 })
 
