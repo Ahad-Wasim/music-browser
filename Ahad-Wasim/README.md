@@ -11,8 +11,8 @@ Additional comments (optional):
 ### Running the App
   
   1. Change into the projects directory 
-  2. Run npm install to install all development packages
-  2. Then simply run gulp and the server will open up a new tab with the content displayed
+  2. Run npm install (This will install all the development packages)
+  3. Then simply run gulp (This will open up a new tab in the browser with all content displayed)
 
         > cd Ahad-Wasim
         > npm install
