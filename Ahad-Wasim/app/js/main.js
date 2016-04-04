@@ -44,7 +44,6 @@
 
    // 30 maximum of letters
    _.letterCount = function(string){
-    console.log(string.length);
     return string.length > 27 ? string.substring(0, 27) + '...' : string.substring(0, 30); 
    }
 
