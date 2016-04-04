@@ -15,7 +15,7 @@ gulp.task('scripts', function(){
   return gulp.src(concatOrder)
     .pipe(sourcemaps.init())
       .pipe(plumber())
-      .pipe(babel()) // NOTE: ES6 import statement won't work here
+      .pipe(babel()) 
       .pipe(concat('main.min.js'))
       .pipe(uglify())
     .pipe(sourcemaps.write())
@@ -27,7 +27,7 @@ gulp.task('sass', function(){
   return gulp.src('assets/sass/**/*.scss')
     .pipe(sourcemaps.init())
       .pipe(plumber())
-      .pipe(sass()) // For the moment files are not being outputted in right directory
+      .pipe(sass()) 
       .pipe(cssnano())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/css'))
