@@ -7,7 +7,7 @@
     return new Date().getTime();
   };
 
-  // Underscore Debounce method to watch for window resizing! So many function are not called
+  // Underscore Debounce method to watch for window resizing! To prevent many new execution contexts
   _.debounce = function(func, wait, immediate) {
 
      var timeout, args, context, timestamp, result;
