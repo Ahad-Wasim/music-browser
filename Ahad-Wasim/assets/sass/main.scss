@@ -72,10 +72,7 @@ nav ul {
 
 .searchBar {
   display:inline-block;
-  vertical-align: middle
-}
-
-.searchBar:hover {
+  vertical-align: middle;
   cursor:pointer;
 }
 
@@ -127,6 +124,7 @@ nav ul {
   height:150px;
   display:inline-block;
   box-sizing:border-box;
+  cursor:pointer;
 }
 
 .banner h2 {
@@ -177,6 +175,7 @@ nav ul {
 
 .song {
   margin-top:17px;
+  cursor:pointer;
 }
 
 .album-artwork-wrapper {
@@ -311,6 +310,7 @@ footer {
 
   .nav-button {
     display:inline-block;
+    cursor:pointer;
   }
 
   .searchBar {
@@ -333,7 +333,7 @@ footer {
 
   .banner {
     width:95%;
-    margin-top:30px;
+    margin-bottom:30px;
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
@@ -377,8 +377,6 @@ footer {
     display:block;
   }
 }
-
-
 
 
 @media (max-width:900px) {
